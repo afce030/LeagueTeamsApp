@@ -37,4 +37,14 @@ dependencies{
 
     implementation implementationDeps.rxJava
     implementation implementationDeps.coroutines
+    implementation implementationDeps.gson
+
+    implementation implementationDeps.room
+    implementation implementationDeps.roomCoroutines
+    implementation implementationDeps.roomRxJava
+
+    annotationProcessor unitTestingDeps.roomCompiler
+    testImplementation unitTestingDeps.roomTestHelpers
+
+    implementation project(path: ':domain')
 }

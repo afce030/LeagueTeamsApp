@@ -1,5 +1,5 @@
 package com.cardona.domain.repositories
 
 interface ITeamsRepository {
-    fun getTeamsFromAPi(leagueName: String?)
+    fun getTeamsFromAPi(leagueName: String)
 }
