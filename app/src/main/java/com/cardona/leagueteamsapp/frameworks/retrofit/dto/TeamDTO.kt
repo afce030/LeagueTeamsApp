@@ -1,4 +1,4 @@
-package com.cardona.data.remoteSources.dto
+package com.cardona.leagueteamsapp.frameworks.retrofit.dto
 
 import com.google.gson.annotations.SerializedName
 

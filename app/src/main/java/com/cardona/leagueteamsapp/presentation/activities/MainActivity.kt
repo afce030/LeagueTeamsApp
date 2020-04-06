@@ -1,7 +1,8 @@
-package com.cardona.leagueteamsapp
+package com.cardona.leagueteamsapp.presentation.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.cardona.leagueteamsapp.R
 
 class MainActivity : AppCompatActivity() {
 

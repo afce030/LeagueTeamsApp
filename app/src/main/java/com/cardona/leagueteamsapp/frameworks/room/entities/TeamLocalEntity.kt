@@ -1,13 +1,15 @@
-package com.cardona.data.persistence
+package com.cardona.leagueteamsapp.frameworks.room.entities
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
+import androidx.room.PrimaryKey
 
-@Entity
+@Entity(tableName = "teams_entity")
 data class TeamLocalEntity (
 
+    @PrimaryKey
     @ColumnInfo(name = "strTeam")
-    val strTeam: String? = null,
+    val strTeam: String,
 
     @ColumnInfo(name = "strDescriptionEN")
     val strDescriptionEN: String? = null,
@@ -22,6 +24,9 @@ data class TeamLocalEntity (
     val strTeamJersey: String? = null,
 
     @ColumnInfo(name = "strWebsite")
-    var strWebsite: String? = null
+    var strWebsite: String? = null,
+
+    @ColumnInfo(name = "strCountry")
+    val strCountry: String? = null
 
 )
