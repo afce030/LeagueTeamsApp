@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/teamsListFragment">
+
+    <fragment
+        android:id="@+id/teamsListFragment"
+        android:name="com.cardona.leagueteamsapp.presentation.fragments.TeamsListFragment"
+        android:label="fragment_teams_list"
+        tools:layout="@layout/fragment_teams_list" >
+        <action
+            android:id="@+id/action_teamsListFragment_to_teamDescriptionFragment"
+            app:destination="@id/teamDescriptionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/teamDescriptionFragment"
+        android:name="com.cardona.leagueteamsapp.presentation.fragments.TeamDescriptionFragment"
+        android:label="fragment_team_description"
+        tools:layout="@layout/fragment_team_description" >
+        <argument
+            android:name="teamName"
+            app:argType="string"
+            android:defaultValue="Not available" />
+        <argument
+            android:name="teamDescription"
+            app:argType="string"
+            android:defaultValue="Not available" />
+        <argument
+            android:name="teamYear"
+            app:argType="string"
+            android:defaultValue="Not available" />
+        <argument
+            android:name="teamBadge"
+            app:argType="string"
+            android:defaultValue="Not available" />
+    </fragment>
+</navigation>
